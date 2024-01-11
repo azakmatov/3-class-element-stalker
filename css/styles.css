@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #1F1F1F;
+    padding: 20px 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.header .container, .main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: inline-block;
+    width: 60px;
+    vertical-align: middle;
+}
+
+.header-logo img {
+    max-width: 100%;
+}
+
+.menu {
+    display: inline-block;
+    /*margin-left: 187px;*/
+    vertical-align: middle;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+    /*margin: 0 25px;*/
+    vertical-align: middle;
+}
+
+.menu ul li:first-child {
+    margin-left: 0;
+}
+
+.menu ul li a {
+    color: #BDBDBD;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+
+.header-search {
+    display: inline-block;
+    /*margin-left: 153px;*/
+    vertical-align: middle;
+}
+
+.header-search:hover {
+    opacity: 0.5;
+}
+
+.main {
+    padding: 53px 0 45px;
+}
+
+.main-info {
+    display: inline-block;
+    max-width: 552px;
+    /*vertical-align: middle;*/
+}
+
+.main-img {
+    /*display: inline-block;*/
+    /*margin-left: 51px;*/
+    /*vertical-align: middle;*/
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.main-info h1 {
+    color: #1F1F1F;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.08em;
+    margin-bottom: 41px;
+    text-transform: uppercase;
+}
+
+.main-info-txt {
+    color: #1F1F1F;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+}
+
+.main-info-description {
+    color: #1F1F1F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    margin-bottom: 33px;
+}
+
+.btn {
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    line-height: 18px; /* либо можно цифру 1 написать, т.к. размер текста и это свойство равны*/
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.btn.btn-pink {
+    background-color: #FE6388;
+    width: 137px;
+}
+
+.btn.btn-pink:hover {
+    background-color: #853445;
+}
+
+.btn.btn-black {
+    background-color: #1F1F1F;;
+    box-sizing: border-box;
+    height: 38px;
+    margin-left: 13px;
+    width: 38px;
+}
+
+.btn.btn-black:hover {
+    background-color: black;
+}
+
+.btn.btn-black.btn-black-bookmark {
+    line-height: 21px;
+}
+
+.btn.btn-black.btn-black-camera {
+    line-height: 37px;
+    padding-left: 9px;
+    padding-top: 5px;
+}
+
+.main-actions a.btn {
+    vertical-align: middle;
+}
+
+.films {
+    padding: 45px 0 53px;
+}
+
+.films-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 20px;
+}
+
+.film-item img {
+    width: 100%;
+}
+
+.films h2 {
+    color: #1F1F1F;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.films-items {
+    /*font-size: 0;*/
+    /*margin-left: -12px;*/
+    /*margin-right: -12px;*/
+}
+
+.film-item {
+    display: inline-block;
+    /*margin: 10px 12px;*/
+    vertical-align: middle;
+}
+
+.film-item:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.films-more {
+    margin-bottom: 5px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.films-more:hover .show-more {
+    color: #1F1F1F;
+}
+
+.show-more {
+    color: #BDBDBD;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 25px;
+}
+
+@media  screen and (max-width: 1023px) {
+    .menu ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        text-align: center;
+    }
+
+    .main .container {
+        flex-direction: column-reverse;
+    }
+
+    .main .container .main-img {
+        margin-bottom: 15px;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+
+    .menu ul {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .films-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media  screen and (max-width: 425px) {
+
+    .header .container {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        margin: 25px 0;
+    }
+
+    .films-items {
+        grid-template-columns: 1fr;
+    }
+}
