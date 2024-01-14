@@ -234,6 +234,7 @@ body {
     margin-bottom: 5px;
     margin-top: 25px;
     text-align: center;
+    cursor: pointer;
 }
 
 .films-more:hover .show-more {
