@@ -231,14 +231,10 @@ body {
 }
 
 .films-more {
-    margin-bottom: 5px;
-    margin-top: 25px;
+    margin: 25px auto;
     text-align: center;
+    width: 300px;
     cursor: pointer;
-}
-
-.films-more:hover .show-more {
-    color: #1F1F1F;
 }
 
 .show-more {
@@ -248,6 +244,10 @@ body {
     font-weight: 700;
     letter-spacing: 0.08em;
     line-height: 25px;
+}
+
+.films-more:hover .show-more {
+    color: #1F1F1F;
 }
 
 @media  screen and (max-width: 1023px) {
